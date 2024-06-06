@@ -13,3 +13,10 @@ if [[ "$1" == "--logs" ]]; then
     done
   fi
 fi
+
+if [[ "$1" == "--help" ]]; then
+  echo "Dostępne opcje:"
+  echo "--date: Wyświetla dzisiejszą datę"
+  echo "--logs [liczba]: Generuje określoną liczbę plików logów, domyślnie 100"
+  echo "--help: Wyświetla wszystkie dostępne opcje"
+fi
