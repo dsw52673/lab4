@@ -18,6 +18,8 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
   echo "Dostępne opcje:"
   echo "--date, -d: Wyświetla dzisiejszą datę"
   echo "--logs, -l [liczba]: Generuje określoną liczbę plików logów, domyślnie 100"
+  echo "--init: Klonuje repozytorium i dodaje bieżący katalog do PATH"
+  echo "--error, -e [liczba]: Generuje określoną liczbę plików błędów, domyślnie 100"
   echo "--help, -h: Wyświetla wszystkie dostępne opcje"
 fi
 
