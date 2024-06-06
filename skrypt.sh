@@ -21,7 +21,16 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
   echo "--help, -h: Wyświetla wszystkie dostępne opcje"
 fi
 
+
 if [[ "$1" == "--init" ]]; then
   git clone https://github.com/dsw52673/lab4.git .
   export PATH=$PATH:$(pwd)
+fi
+
+if [[ "$1" == "--error" || "$1" == "-e" ]]; then
+  num_errors=${2:-100}
+  mkdir -p errorx
+  for i in $(seq 1 $num_errors); do
+    echo "Plik: error$i.txt, Skrypt: $0, Data: $(date)" > "errorx/error$i.txt"
+  done
 fi
